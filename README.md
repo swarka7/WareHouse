@@ -1,6 +1,6 @@
 # WareHouse Simulation
 
-C++11 console simulation of a warehouse dispatch center. A config file seeds customers (soldier/civilian) and volunteers (collectors/drivers, limited or unlimited). At runtime you can place orders, advance time, inspect status, and back up/restore the warehouse state.
+C++11 console simulation of a warehouse dispatch center. It models incoming orders from customers, assigns “collector” volunteers to pick them up, hands them off to “driver” volunteers for delivery, and advances the system in discrete steps until orders complete. Volunteers can be limited (finite orders) or unlimited, and the entire state can be backed up/restored mid-run. A config file seeds the initial customers and volunteers; you drive the flow via interactive commands.
 
 ## Prerequisites
 - Windows with a C++ toolchain (`g++` with C++11 support).
